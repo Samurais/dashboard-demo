@@ -153,8 +153,8 @@ public class DataProvider {
                 json = readJsonFromFile(cache);
             } else {
                 // Get an API key from http://developer.rottentomatoes.com
-                String apiKey = "xxxxxxxxxxxxxxxxxxx";
-                json = readJsonFromUrl("http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?page_limit=30&apikey=" + apiKey);
+                String apiKey = "kzzh7rmm27xvu4ps4d69x8mn";
+                json = readJsonFromUrl("http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?page_limit=30&apikey=kzzh7rmm27xvu4ps4d69x8mn");
                 // Store in cache
                 FileWriter fileWriter = new FileWriter(cache);
                 fileWriter.write(json.toString());
